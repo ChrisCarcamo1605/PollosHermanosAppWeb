@@ -1,5 +1,7 @@
-package com.polloshermanos.restaurante.PollosHermanosWeb.Domain;
+package com.polloshermanos.restaurante.PollosHermanosWeb.Controllers;
 
+import com.polloshermanos.restaurante.PollosHermanosWeb.Domain.Employee;
+import com.polloshermanos.restaurante.PollosHermanosWeb.Interfaces.EmployeeRepository;
 import com.polloshermanos.restaurante.PollosHermanosWeb.Interfaces.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
