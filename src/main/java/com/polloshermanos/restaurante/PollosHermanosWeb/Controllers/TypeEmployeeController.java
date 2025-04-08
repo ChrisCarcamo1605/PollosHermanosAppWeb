@@ -26,5 +26,7 @@ public class TypeEmployeeController {
         newTypeEmployee.setChef(typeEmployee.chef());
         newTypeEmployee.setCleaningStaff(typeEmployee.cleaningStaff());
         newTypeEmployee.setMaintenanceStaff(typeEmployee.maintenanceStaff());
+
+        typeEmployeeService.saveTypeEmployee(newTypeEmployee);
     }
 }

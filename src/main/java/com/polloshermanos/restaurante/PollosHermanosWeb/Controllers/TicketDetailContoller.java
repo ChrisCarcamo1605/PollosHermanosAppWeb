@@ -21,5 +21,6 @@ public class TicketDetailContoller {
 
         var newTicketDetail = new TicketDetail();
         newTicketDetail.setSubTotal(ticketDetail.subTotal());
+        ticketDetailService.saveTicketDetail(newTicketDetail);
     }
 }

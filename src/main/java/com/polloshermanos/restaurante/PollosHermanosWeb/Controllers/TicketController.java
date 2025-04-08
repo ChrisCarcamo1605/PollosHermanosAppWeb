@@ -23,5 +23,6 @@ public class TicketController {
         newTicket.setDate(ticket.date());
         newTicket.setHour(ticket.hour());
 
+        ticketService.saveTicket(newTicket);
     }
 }
