@@ -12,21 +12,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/typeEmployee")
 public class TypeEmployeeController {
 
-    @Autowired
-    ITypeEmployeeService typeEmployeeService;
-
-    @PostMapping
-    public void imprimiMundo(DtoSaveTypeEmployee typeEmployee){
-        System.out.println("Hola mundo");
-        var newTypeEmployee = new TypeEmployee();
-        newTypeEmployee.setBoss(typeEmployee.boos());
-        newTypeEmployee.setGeneralManager(typeEmployee.generalManager());
-        newTypeEmployee.setManager(typeEmployee.manager());
-        newTypeEmployee.setCashier(typeEmployee.cashier());
-        newTypeEmployee.setChef(typeEmployee.chef());
-        newTypeEmployee.setCleaningStaff(typeEmployee.cleaningStaff());
-        newTypeEmployee.setMaintenanceStaff(typeEmployee.maintenanceStaff());
-
-        typeEmployeeService.saveTypeEmployee(newTypeEmployee);
-    }
+//    @Autowired
+//    ITypeEmployeeService typeEmployeeService;
+//
+//    @PostMapping
+//    public void imprimiMundo(DtoSaveTypeEmployee typeEmployee){
+//        System.out.println("Hola mundo");
+//        var newTypeEmployee = new TypeEmployee();
+//        newTypeEmployee.setBoss(typeEmployee.boos());
+//        newTypeEmployee.setGeneralManager(typeEmployee.generalManager());
+//        newTypeEmployee.setManager(typeEmployee.manager());
+//        newTypeEmployee.setCashier(typeEmployee.cashier());
+//        newTypeEmployee.setChef(typeEmployee.chef());
+//        newTypeEmployee.setCleaningStaff(typeEmployee.cleaningStaff());
+//        newTypeEmployee.setMaintenanceStaff(typeEmployee.maintenanceStaff());
+//
+//        typeEmployeeService.saveTypeEmployee(newTypeEmployee);
+//    }
 }

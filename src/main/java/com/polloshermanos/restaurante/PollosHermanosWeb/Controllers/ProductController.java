@@ -19,11 +19,6 @@ public class ProductController {
     public void imprimirMundo(DtoSaveProduct product){
         System.out.println("Hola Mundo");
 
-        var newProduct = new Product();
-        newProduct.setName(product.name());
-        newProduct.setAsset(product.asset());
-        newProduct.setDescription(product.description());
-
-        productService.saveProduct(newProduct);
+        productService.saveProduct(product);
     }
 }

@@ -21,7 +21,6 @@ public class TicketController {
         System.out.println("Hola Mundo");
         var newTicket = new Ticket();
         newTicket.setDate(ticket.date());
-        newTicket.setHour(ticket.hour());
 
         ticketService.saveTicket(newTicket);
     }
