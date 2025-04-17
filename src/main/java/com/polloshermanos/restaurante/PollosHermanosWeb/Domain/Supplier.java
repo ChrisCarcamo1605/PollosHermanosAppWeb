@@ -1,9 +1,6 @@
 package com.polloshermanos.restaurante.PollosHermanosWeb.Domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,10 +12,12 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "supplier")
 public class Supplier {
 
     @Id
     @GeneratedValue ( strategy = GenerationType.IDENTITY)
+    @Column(name = "supplier_id")
     private long supplierId;
     private String name;
     private String product;

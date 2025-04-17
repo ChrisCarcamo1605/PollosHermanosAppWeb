@@ -1,9 +1,6 @@
 package com.polloshermanos.restaurante.PollosHermanosWeb.Domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,10 +15,12 @@ import java.time.OffsetDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "tickets")
 public class Ticket {
 
     @Id
     @GeneratedValue ( strategy = GenerationType.IDENTITY)
+    @Column(name = "ticket_id")
     private long ticketId;
     private LocalDateTime date;
     private BigDecimal price;

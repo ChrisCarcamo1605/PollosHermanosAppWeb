@@ -9,6 +9,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -20,7 +22,7 @@ public class Supplies {
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private long suppliesId;
     private String name;
-    private float amount;
+    private BigDecimal amount;
 
 
 
