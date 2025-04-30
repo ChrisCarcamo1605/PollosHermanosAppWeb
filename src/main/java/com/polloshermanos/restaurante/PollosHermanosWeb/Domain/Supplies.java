@@ -1,9 +1,6 @@
 package com.polloshermanos.restaurante.PollosHermanosWeb.Domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,11 +12,13 @@ import java.math.BigDecimal;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Entity (name = "Supplies")
+@Table(name = "supplies")
 
 public class Supplies {
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
+    @Column(name = "supplies_id")
     private long suppliesId;
     private String name;
     private BigDecimal amount;
